@@ -10,26 +10,8 @@ function init() {
 
 const input = document.getElementById("guess-input");
 const button = document.getElementById("guess-button");
-const deleteButton = document.getElementById("delete-button");
-const enterButton = document.getElementById("enter-button");
 
 button.addEventListener("click", intentar);
-
-
-document.querySelectorAll('.key').forEach(key => {
-    key.addEventListener('click', function() {
-        const letra = this.textContent;
-        if (letra === 'Enter') {
-            intentar();
-        } else if (letra === '⌫') { // Usar el símbolo representativo o imagen de borrado
-            if (input.value.length > 0) {
-                input.value = input.value.slice(0, -1);
-            }
-        } else {
-            input.value += letra;
-        }
-    });
-});
 
 function intentar() {
     const INTENTO = leerIntento();

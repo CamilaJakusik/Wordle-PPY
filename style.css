@@ -73,54 +73,6 @@ button:active {
   font-size: 24px;
 }
 
-.keyboard {
-  text-align: center;
-  margin-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 320px;
-  margin: 0 auto;
-}
-
-.keyboard-row {
-  display: flex;
-  justify-content: stretch;
-  flex-direction: row;
-}
-
-.large-key {
-  flex: 2 1;
-  padding: 3px;
-}
-
-.key {
-  font-family: 'Fredoka One', cursive;
-  padding: 10px 15px;
-  font-size: 16px;
-  margin: 3px;
-  min-height: 46px;
-  border: 2px solid transparent;
-  background-color: #eee;
-  border-radius: 6px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: inherit;
-  text-transform: capitalize;
-  transition: .2s;
-}
-
-.key img {
-  max-width: 24px;
-  max-height: 24px;
-}
-
-.key:hover {
-  background-color: #ddd;
-}
-
 .help-button {
   position: fixed;
   bottom: 10px;
